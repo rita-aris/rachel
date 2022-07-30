@@ -385,6 +385,10 @@ template {
 .main-image {
   width: 580px;
   height: 553px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 15%;
+     object-position: 0 15%;
 }
 
 .main-text {
