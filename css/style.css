@@ -491,6 +491,10 @@ template {
   padding: 75px 0 80px 0;
 }
 
+.about__title {
+  margin-bottom: 63px;
+}
+
 @media (min-width: 992px) {
   .main-text__button:hover {
     background: tomato;
