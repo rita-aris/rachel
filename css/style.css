@@ -357,7 +357,6 @@ template {
 }
 
 .main {
-  position: relative;
   background-color: #F9F7F8;
   padding: 20px 0 40px 0;
 }
@@ -390,7 +389,6 @@ template {
      object-fit: cover;
   -o-object-position: 0 15%;
      object-position: 0 15%;
-  z-index: 3;
 }
 
 .main-text {
@@ -461,6 +459,32 @@ template {
 @media (max-width: 992px) {
   .main-text {
     max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 10px 0 64px 0;
+  }
+  .main__logo, .main__image {
+    margin-bottom: 10px;
+  }
+  .main-image {
+    width: 391px;
+    -o-object-position: none;
+       object-position: none;
+  }
+  .main-text {
+    max-width: 530px;
+  }
+  .main-text__description {
+    max-width: inherit;
+    font-size: 16px;
+    margin-bottom: 46px;
+  }
+  .main-text__button {
+    padding-right: 126px;
+    padding-left: 126px;
   }
 }
 /*# sourceMappingURL=style.css.map */
