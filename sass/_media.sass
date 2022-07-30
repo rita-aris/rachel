@@ -27,5 +27,38 @@
         padding-right: 126px
         padding-left: 126px
   
-
+@media (max-width: 576px)
+  .main
+    &-text
+      max-width: 450px
   
+@media (min-width: 320px) and (max-width: 480px)
+  .main
+    padding-top: 0
+    padding-bottom: 53px
+    &__logo, &__image
+      margin-bottom: 0
+    &-image
+      width: 286px
+      height: 411px
+    &-text
+      max-width: 335px
+      &__title
+        font-size: 30px
+        margin-bottom: 20px
+      &__description
+        line-height: 135%
+        margin-bottom: 25px
+      &__button
+        font-family: 'Cinzel', serif
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 115%
+        text-transform: none
+        padding: 16px 122px
+
+  .logo
+    &__image
+      width: 181px
+      height: 73px

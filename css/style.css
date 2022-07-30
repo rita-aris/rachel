@@ -445,7 +445,7 @@ template {
   cursor: pointer;
 }
 
-.logo-image {
+.logo__image {
   width: 235px;
   height: 95px;
 }
@@ -485,6 +485,50 @@ template {
   .main-text__button {
     padding-right: 126px;
     padding-left: 126px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-text {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .main {
+    padding-top: 0;
+    padding-bottom: 53px;
+  }
+  .main__logo, .main__image {
+    margin-bottom: 0;
+  }
+  .main-image {
+    width: 286px;
+    height: 411px;
+  }
+  .main-text {
+    max-width: 335px;
+  }
+  .main-text__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .main-text__description {
+    line-height: 135%;
+    margin-bottom: 25px;
+  }
+  .main-text__button {
+    font-family: 'Cinzel', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 115%;
+    text-transform: none;
+    padding: 16px 122px;
+  }
+  .logo__image {
+    width: 181px;
+    height: 73px;
   }
 }
 /*# sourceMappingURL=style.css.map */
