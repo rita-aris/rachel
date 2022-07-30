@@ -13,6 +13,42 @@ h1, h2, p {
   margin: 0;
 }
 
+.section-container {
+  max-width: 980px;
+  color: #F9F7F8;
+  margin: auto;
+}
+
+.section-top {
+  position: relative;
+}
+
+.section-top__title {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-top__subtitle {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-family: 'Alex Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  color: #DEB3AD;
+  opacity: 0.3;
+  margin-right: -50%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -448,6 +484,11 @@ template {
 .logo__image {
   width: 235px;
   height: 95px;
+}
+
+.about {
+  background-color: #25232B;
+  padding: 75px 0 80px 0;
 }
 
 @media (min-width: 992px) {

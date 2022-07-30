@@ -8,3 +8,32 @@ body
 
 h1, h2, p
   margin: 0
+
+.section  
+  &-container
+    max-width: 980px
+    color: $primary
+    margin: auto
+  &-top
+    position: relative
+    &__title
+      font-family: 'Cormorant'
+      font-style: normal
+      font-weight: 300
+      font-size: 40px
+      line-height: 48px
+      text-align: center
+      text-transform: uppercase
+    &__subtitle
+      position: absolute      
+      top: -35px
+      left: 50%      
+      transform: translate(-50%, 0)
+      font-family: 'Alex Brush'
+      font-style: normal
+      font-weight: 400
+      font-size: 60px
+      line-height: 120%
+      color: $subtitle-color
+      opacity: 0.3
+      margin-right: -50%
