@@ -357,6 +357,7 @@ template {
 }
 
 .main {
+  position: relative;
   background-color: #F9F7F8;
   padding: 20px 0 40px 0;
 }
@@ -389,6 +390,7 @@ template {
      object-fit: cover;
   -o-object-position: 0 15%;
      object-position: 0 15%;
+  z-index: 3;
 }
 
 .main-text {
@@ -448,5 +450,17 @@ template {
 .logo-image {
   width: 235px;
   height: 95px;
+}
+
+@media (min-width: 992px) {
+  .main-text__button:hover {
+    background: tomato;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-text {
+    max-width: 800px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
