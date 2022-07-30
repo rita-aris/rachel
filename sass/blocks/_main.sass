@@ -1,2 +1,56 @@
-main
+.main
   background-color: $primary
+  padding: 20px 0 40px 0
+  &-container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    margin: auto
+  &__logo, &__image
+    margin-bottom: 20px
+  &-image
+    width: 580px
+    height: 553px
+  &-text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    max-width: 868px
+    &__title
+      font-family: 'Cormorant', serif
+      font-style: normal
+      font-weight: 300
+      font-size: 45px
+      line-height: 120%
+      text-transform: uppercase
+      text-align: center
+      max-width: inherit
+      margin-top: 0
+      margin-bottom: 10px
+    &__description
+      max-width: 580px
+      font-style: normal
+      font-size: 18px
+      line-height: 138%
+      text-align: center
+      margin-bottom: 30px
+    &__button
+      max-width: 400px
+      font-family: 'Cormorant', serif
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 120%
+      text-transform: uppercase
+      color: $primary
+      background: linear-gradient(84.94deg, #D66D75 -2.63%, #E29587 101.46%)
+      border: none
+      padding: 14px 141px
+
+.logo  
+  &-image
+    width: 235px
+    height: 95px
+    
