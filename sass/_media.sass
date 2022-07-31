@@ -4,10 +4,57 @@
       &__button:hover
         background: tomato
 
+@media (max-width: 1200px)
+  .section
+    &-container
+      max-width: 900px
+  .about
+    &-author
+      max-width: 450px
+    &-quote
+      max-width: 450px
+      left: 50%
+      top: 560px
+      padding: 20px 50px 20px 51px
+
 @media (max-width: 992px)
+  .section
+    &-container
+      max-width: 535px
+    &-top
+      &__title
+        font-size: 30px
+        line-height: 120%
   .main
     &-text
       max-width: 800px
+  .about
+    position: static
+    padding: 95px 0 60px 0
+    &-owner
+      align-items: center
+    &__owner
+      margin-bottom: 40px
+    &-image
+      width: 257px
+      height: 447px
+      object-fit: none
+    &-author
+      max-width: 258px
+      &__name
+        font-size: 20px
+        line-height: 125%
+        margin-top: 0
+        margin-bottom: 10px
+      &__text
+        font-size: 16px
+    &-quote
+      position: relative
+      left: 0
+      top: 0
+      max-width: inherit
+      padding: 34px 93px 31px 92px
+
 
 @media (max-width: 768px)
   .main
@@ -57,7 +104,6 @@
         line-height: 115%
         text-transform: none
         padding: 16px 122px
-
   .logo
     &__image
       width: 181px
