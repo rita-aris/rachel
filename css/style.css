@@ -544,7 +544,7 @@ template {
 
 .about-quote {
   position: absolute;
-  left: 922px;
+  left: calc( 50% - 30px);
   top: 540px;
   max-width: 520px;
   background-color: #F9F7F8;
