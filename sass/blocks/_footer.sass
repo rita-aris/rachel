@@ -1,8 +1,40 @@
 .footer
   background-color: $secondary
   padding: 75px 0px 80px 0px
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
   &-social
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 80px
     &__icon
       width: 30px
       height: 30px
       fill: $accent
+
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 774px
+  &-list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    list-style-type: none
+    margin-top: 0
+    margin-bottom: 0
+    padding-left: 0
+  &__item
+    margin-right: 30px    
+  &__link
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 120%
+    text-decoration: none
+    color: $primary
+    
