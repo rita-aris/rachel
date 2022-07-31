@@ -49,6 +49,11 @@ h1, h2, p {
   margin-right: -50%;
 }
 
+.section-top__line {
+  display: block;
+  margin: auto;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -487,6 +492,7 @@ template {
 }
 
 .about {
+  position: relative;
   background-color: #25232B;
   padding: 75px 0 80px 0;
 }
@@ -499,16 +505,66 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.about-image {
+  width: 380px;
+  height: 526px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-author {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  max-width: 520px;
+}
+
+.about-author__name {
+  display: block;
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 33px;
+  margin-bottom: 20px;
+}
+
+.about-author__text {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 138%;
+}
+
+.about-quote {
+  position: absolute;
+  left: 922px;
+  top: 540px;
+  max-width: 520px;
+  background-color: #F9F7F8;
+  padding: 33px 70px 32px 71px;
+}
+
+.about-quote__text {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  color: #25232B;
+  text-align: center;
+}
+
+.about-quote__marks {
+  position: absolute;
+  left: 20px;
+  top: -10px;
 }
 
 @media (min-width: 992px) {
