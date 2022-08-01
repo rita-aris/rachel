@@ -813,6 +813,51 @@ template {
     max-width: inherit;
     padding: 34px 93px 31px 92px;
   }
+  .footer {
+    padding: 95px 0 60px 0;
+  }
+  .footer-wrapper {
+    min-height: 544px;
+  }
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 124px;
+  }
+  .footer-contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 245px;
+  }
+  .footer-connect {
+    max-width: 230px;
+  }
+  .footer-address {
+    max-width: 260px;
+  }
+  .footer-bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 95px;
+  }
+  .navbar-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 64px;
+  }
+  .navbar__item {
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 768px) {
