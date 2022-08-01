@@ -1,6 +1,11 @@
 .footer
   background-color: $secondary
   padding: 75px 0px 80px 0px
+  &-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 290px
   &-top
     display: flex
     justify-content: space-between
@@ -14,6 +19,40 @@
       width: 30px
       height: 30px
       fill: $accent
+  &-contacts
+    display: flex
+    justify-content: space-between
+    &__item
+      font-style: normal
+      font-size: 18px
+      line-height: 138%
+      color: $light
+      margin-bottom: 8px
+    &__link
+      font-style: normal
+      font-size: 18px
+      line-height: 138%
+      color: $light
+      text-decoration: none
+  &-connect
+    display: flex
+    flex-direction: column
+  &-address
+    max-width: 335px
+  &-time
+    display: flex
+    flex-direction: column
+  &-bottom
+    display: flex
+    justify-content: space-between
+    &__item
+      font-style: normal
+      font-size: 18px
+      line-height: 138%
+      color: $light
+      opacity: 0.7
+  &-copyright
+    max-width: 335px
 
 .navbar
   display: flex
