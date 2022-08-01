@@ -80,15 +80,18 @@
       max-width: 230px
     &-address
       max-width: 260px
+    &-time
+      justify-content: space-between
     &-bottom
       flex-wrap: wrap
       min-height: 95px
   
   .navbar
     &-list
-      justify-content: space-between
-      flex-wrap: wrap      
-      min-height: 64px
+      display: grid
+      grid-template-columns: repeat(5, max-content)
+      column-gap: 30px
+      row-gap: 20px
     &__item
       margin-right: 0px
 

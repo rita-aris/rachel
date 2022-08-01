@@ -842,18 +842,25 @@ template {
   .footer-address {
     max-width: 260px;
   }
+  .footer-time {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .footer-bottom {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     min-height: 95px;
   }
   .navbar-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    min-height: 64px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (max-content)[5];
+        grid-template-columns: repeat(5, -webkit-max-content);
+        grid-template-columns: repeat(5, max-content);
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 20px;
   }
   .navbar__item {
     margin-right: 0px;
