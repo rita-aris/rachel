@@ -409,6 +409,7 @@ template {
 .main {
   background-color: #F9F7F8;
   padding: 20px 0 40px 0;
+  position: relative;
 }
 
 .main-container {
@@ -439,6 +440,7 @@ template {
      object-fit: cover;
   -o-object-position: 0 15%;
      object-position: 0 15%;
+  z-index: 3;
 }
 
 .main-text {
@@ -456,6 +458,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   max-width: 868px;
+  z-index: 3;
 }
 
 .main-text__title {
@@ -498,6 +501,17 @@ template {
 .logo__image {
   width: 235px;
   height: 95px;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  fill: #25232B;
+  opacity: 0.1;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .about {
